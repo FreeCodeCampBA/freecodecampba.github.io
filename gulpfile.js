@@ -5,13 +5,6 @@ var uglify = require('gulp-uglify');
 var cleanCSS = require('gulp-clean-css');
 var imagemin = require('gulp-imagemin');
 
-
-// gulp.task('concat-js', function() {
-//     return gulp.src('./src/js/script.js')
-//         .pipe(concat('main.js'))
-//         .pipe(gulp.dest('./dist/js'));
-// });
-
 gulp.task('uglify', function() {
     return gulp.src('./src/js/script.js')
         .pipe(uglify())
@@ -29,7 +22,7 @@ gulp.task('minify-css', function() {
 });
 
 gulp.task('minify-img', function() {
-    return gulp.src(['./src/img/meetup-aerolab.jpg', './src/img/logo.svg'])
+    return gulp.src(['./src/img/meetup-aerolab.jpg', './src/img/logo.svg', './src/img/areatres.svg', './src/img/ekospace.svg'])
         .pipe(imagemin())
         .pipe(gulp.dest('./dist/img'));
 });

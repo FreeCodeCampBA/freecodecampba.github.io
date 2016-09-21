@@ -109,9 +109,8 @@ i {
 
 footer {
     background-color: #406661;
-    padding-top: 25px;
+    padding: 25px 0 10px 0;
     color: #f5f5f5;
-    padding: 10px 0;
 }
 
 .meetup-logo {

@@ -30,7 +30,7 @@ body {
     position: relative;
 }
 
-h2 {
+#que h2 {
     background-color: #212121;
     position: absolute;
     color: #FFF;
@@ -107,22 +107,16 @@ i {
     font-size: 14px;
 }
 
-.scrolloff {
-    pointer-events: none;
-}
-
-.embed-responsive-16by9 {
-    padding-bottom: 30%;
-}
-
 footer {
     background-color: #406661;
+    padding-top: 25px;
     color: #f5f5f5;
     padding: 10px 0;
 }
 
 .meetup-logo {
-    width: 40px;
+    width: 26px;
+    height: 28px;
 }
 
 footer a,
@@ -130,6 +124,18 @@ footer a:hover,
 footer a:focus,
 footer a:active {
     color: #f5f5f5;
+    text-decoration: none;
+}
+
+footer p {
+    margin: 5px 0 0 0;
+    font-weight: 100;
+    opacity: 0;
+}
+
+footer a:hover>p {
+    transition: all 0.8s;
+    opacity: 1;
 }
 
 .fa-facebook-official:hover {
@@ -169,9 +175,10 @@ footer a:active {
         font-size: 18px;
         top: 40%;
     }
-    .embed-responsive-16by9 {
-        padding-bottom: 50%;
-    }
+}
+
+.subt {
+    margin: 0 0 30px 0;
 }
 
 .meetup-place {
@@ -180,5 +187,5 @@ footer a:active {
 }
 
 .meetup-link:hover {
-    text-decoration: none !important;
+    text-decoration: none;
 }

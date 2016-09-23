@@ -3,6 +3,13 @@ body {
     padding-top: 50px;
 }
 
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+}
+
 .thumbnail {
     padding: 10px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -124,7 +131,6 @@ footer a:hover,
 footer a:focus,
 footer a:active {
     color: #f5f5f5;
-    text-decoration: none;
 }
 
 footer p {
@@ -138,36 +144,32 @@ footer a:hover>p {
     opacity: 1;
 }
 
-.fa-facebook-official:hover {
+.fb:hover>.fa-facebook-official {
     color: #3d5a98;
 }
 
-.fa-twitter:hover {
+.tw:hover>.fa-twitter {
     color: #10dffd;
-}
-
-.fa-envelope:hover {
-    color: #dd4b39;
-}
-
-.fa-pagelines:hover {
-    color: #F7E74A;
-}
-
-.fa-slack:hover {
-    color: #3bb18b;
-}
-
-.fa-github-alt:hover {
-    color: #f6c6af;
 }
 
 .meetup-logo {
     fill: #F5F5F5;
 }
 
-.meetup-logo:hover {
+.mt:hover>.meetup-logo {
     fill: #e0393d;
+}
+
+.sl:hover>.fa-slack {
+    color: #3bb18b;
+}
+
+.gh:hover>.fa-github-alt {
+    color: #f6c6af;
+}
+
+.em:hover>.fa-envelope {
+    color: #dd4b39;
 }
 
 @media (max-width: 992px) {
@@ -184,8 +186,4 @@ footer a:hover>p {
 .meetup-place {
     max-height: 159.25px;
     margin-top: 20px;
-}
-
-.meetup-link:hover {
-    text-decoration: none;
 }

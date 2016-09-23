@@ -30,7 +30,7 @@ body {
     position: relative;
 }
 
-#que h2 {
+#que h1 {
     background-color: #212121;
     position: absolute;
     color: #FFF;
@@ -42,6 +42,7 @@ body {
 }
 
 .filter {
+    -webkit-filter: blur(2px);
     filter: blur(2px);
 }
 
@@ -170,7 +171,7 @@ footer a:hover>p {
 }
 
 @media (max-width: 992px) {
-    h2 {
+    h1 {
         font-size: 18px;
         top: 40%;
     }

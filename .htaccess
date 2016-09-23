@@ -1,0 +1,8 @@
+---
+---
+DirectoryIndex index.html
+
+RewriteEngine On
+RewriteBase /
+
+...

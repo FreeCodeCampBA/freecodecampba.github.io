@@ -1,6 +1,8 @@
 body {
     font-family: 'Open Sans', sans-serif;
     padding-top: 50px;
+    height: 100%;
+    width: 100%;
 }
 
 a,
@@ -8,6 +10,57 @@ a:hover,
 a:focus,
 a:active {
     text-decoration: none;
+}
+
+header {
+    position: relative;
+    color: #FFFFFF;
+    height: 100vh;
+}
+
+header h1 {
+    font-weight: 400;
+}
+
+header h2 {
+    font-weight: 300;
+}
+
+header a,
+header a:hover,
+header a:focus,
+header a:active {
+    color: #FFFFFF;
+}
+
+.container-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-image: url(../../dist/img/meetup-aerolab.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-filter: blur(3px) brightness(.7);
+    filter: blur(3px) brightness(.7);
+}
+
+.color-layer {
+    background-color: #406661;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+}
+
+.inside-img {
+    text-align: center;
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    top: 30%;
 }
 
 .thumbnail {
@@ -31,21 +84,6 @@ a:active {
 .nav-logo {
     margin-top: -10px;
     height: 40px;
-}
-
-.container-img {
-    position: relative;
-}
-
-#que h1 {
-    background-color: #212121;
-    position: absolute;
-    color: #FFF;
-    padding: 10px;
-    opacity: 0.9;
-    width: 100%;
-    top: 65%;
-    left: 0;
 }
 
 .filter {
@@ -110,6 +148,12 @@ i {
     padding-left: 5px;
 }
 
+
+#como .text-jt > p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
 #como p {
     margin-bottom: 0;
     font-size: 14px;
@@ -170,13 +214,6 @@ footer a:hover>p {
 
 .em:hover>.fa-envelope {
     color: #dd4b39;
-}
-
-@media (max-width: 992px) {
-    h1 {
-        font-size: 18px;
-        top: 40%;
-    }
 }
 
 .subt {

@@ -1,8 +1,6 @@
 body {
     font-family: 'Open Sans', sans-serif;
     padding-top: 50px;
-    height: 100%;
-    width: 100%;
 }
 
 a,
@@ -64,9 +62,9 @@ header a:active {
 }
 
 .thumbnail {
-    padding: 10px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    padding: 10px;
 }
 
 .thumbnail:hover {
@@ -89,6 +87,7 @@ header a:active {
 .jumbotron {
     margin-bottom: 0;
 }
+
 
 .bg-grey {
     background-color: #f5f5f5;
@@ -149,6 +148,10 @@ i {
     margin-bottom: 30px;
 }
 
+.text-jt > h3{
+    margin-top: 0;
+}
+
 #como .text-jt>p {
     font-size: 20px;
     margin-bottom: 10px;
@@ -161,7 +164,7 @@ i {
 
 footer {
     background-color: #406661;
-    padding: 25px 0 10px 0;
+    padding: 35px 0 20px 0;
     color: #f5f5f5;
 }
 
@@ -223,4 +226,8 @@ footer a:hover>p {
 .meetup-place {
     max-height: 159.25px;
     margin-top: 20px;
+}
+
+.friends {
+    height: 70px;
 }

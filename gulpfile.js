@@ -32,7 +32,7 @@ gulp.task('minify-img', function() {
 gulp.task('minify-html', function() {
   return gulp.src('./src/html/*.html')
     .pipe(htmlmin({collapseWhitespace: true}))
-    .pipe(gulp.dest('./dist/html'));
+    .pipe(gulp.dest('./'));
 });
 
 gulp.task('default', ['uglify', 'minify-css', 'minify-img','minify-html']);

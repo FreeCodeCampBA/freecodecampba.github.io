@@ -88,7 +88,6 @@ header a:active {
     margin-bottom: 0;
 }
 
-
 .bg-grey {
     background-color: #f5f5f5;
 }
@@ -148,7 +147,7 @@ i {
     margin-bottom: 30px;
 }
 
-.text-jt > h3{
+.text-jt>h3 {
     margin-top: 0;
 }
 
@@ -230,4 +229,14 @@ footer a:hover>p {
 
 .friends {
     height: 70px;
+    width: 100%;
+}
+
+img[alt="Aerolab"] {
+    height: 55px;
+}
+
+img[alt="NodeSchoolBA"],
+img[alt="BANode"] {
+    height: 120px;
 }

@@ -24,7 +24,7 @@ gulp.task('minify-css', function() {
 });
 
 gulp.task('minify-img', function() {
-    return gulp.src(['./src/img/meetup-aerolab.jpg', './src/img/logo.svg', './src/img/areatres.svg', './src/img/ekospace.svg', './src/img/aerolab.svg', './src/img/acamica.svg'])
+    return gulp.src(['./src/img/meetup-aerolab.jpg', './src/img/logo.svg', './src/img/areatres.svg', './src/img/ekospace.svg', './src/img/aerolab.svg', './src/img/acamica.svg', './src/img/coderhouse.svg', './src/img/nodeschoolba.svg', './src/img/banode.svg'])
         .pipe(imagemin())
         .pipe(gulp.dest('./dist/img'));
 });

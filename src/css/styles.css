@@ -136,9 +136,9 @@ i {
     width: 70px;
 }
 
-.circle:hover {
+/*.circle:hover {
     transform: scale(1.2);
-}
+} */
 
 #como .fa {
     font-size: 35px;

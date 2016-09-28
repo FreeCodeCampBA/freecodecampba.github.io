@@ -114,6 +114,10 @@ p.dev-text {
     margin: 10px 0;
 }
 
+.margin-15 {
+    margin: 15px 0;
+}
+
 i {
     font-size: 60px;
 }
@@ -235,8 +239,3 @@ footer a:hover>p {
 img[alt="Aerolab"] {
     height: 55px;
 }
-/*
-img[alt="NodeSchoolBA"],
-img[alt="BANode"] {
-    height: 150px;
-}*/

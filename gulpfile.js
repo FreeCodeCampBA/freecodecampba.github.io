@@ -30,7 +30,7 @@ gulp.task('minify-js', function () {
 });
 
 gulp.task('minify-img', function () {
-    return gulp.src(['./src/img/*.jpg', './src/img/*.svg'])
+    return gulp.src(['./src/img/*.jpg', './src/img/*.png', './src/img/*.svg'])
         .pipe(imagemin())
         .pipe(gulp.dest('./dist/img'));
 });

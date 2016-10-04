@@ -22,8 +22,14 @@ gulp.task('minify-css', function () {
         .pipe(gulp.dest('./dist/css'));
 });
 
+gulp.task('concat-js', function () {
+    return gulp.src(['./src/lib/jquery.min.js', './src/lib/bootstrap.min.js', './src/lib/moment.min.js', './src/lib/locale-es.js', './src/js/script.js'])
+        .pipe(concat('main.js'))
+        .pipe(gulp.dest('./dist/js'));
+});
+
 gulp.task('minify-js', function () {
-    return gulp.src('./src/js/*.js')
+    return gulp.src('./dist/js/main.js')
         .pipe(uglify())
         .pipe(rename('main.min.js'))
         .pipe(gulp.dest('./dist/js'))
@@ -35,10 +41,10 @@ gulp.task('minify-img', function () {
         .pipe(gulp.dest('./dist/img'));
 });
 
-
-gulp.task('default', ['minify-html', 'minify-css', 'minify-js', 'minify-img', ], function () {
+gulp.task('default', ['minify-html', 'minify-css', 'concat-js', 'minify-js', 'minify-img'], function () {
     gulp.watch('./src/html/index.html', ['minify-html']);
     gulp.watch('./src/css/styles.css', ['minify-css']);
+    gulp.watch('./src/js/script.js', ['concat-js']);
     gulp.watch('./src/js/script.js', ['minify-js']);
     gulp.watch(['./src/img/*.jpg', './src/img/*.svg'], ['minify-img']);
 })

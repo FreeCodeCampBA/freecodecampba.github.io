@@ -31,6 +31,10 @@ header a:active {
     color: #FFFFFF;
 }
 
+[data-aload] {
+    background-image: none !important;
+}
+
 .container-img {
     position: absolute;
     top: 0;
@@ -38,7 +42,7 @@ header a:active {
     right: 0;
     bottom: 0;
     z-index: -1;
-    background-image: url(../../dist/img/meetup-aerolab.jpg);
+    background: url(../../dist/img/meetup-aerolab.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;

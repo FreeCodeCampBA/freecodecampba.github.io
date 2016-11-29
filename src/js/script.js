@@ -15,11 +15,11 @@ function setCard (num, response) {
   $('.caption h5').eq(num).text(response.data[num].venue.address_1)
   $('.caption h6').eq(num).text(capitalizeFirstLetter(moment(response.data[num].time).format('dddd, D MMMM, hh:mmA')))
   if (response.data[num].venue.name === 'EkoSpace') {
-    $('.thumbnail img').eq(num).attr('data-aload', './dist/img/ekospace.svg')
+    $('.thumbnail img').eq(num).data('aload', './dist/img/ekospace.svg')
   } else if (response.data[num].venue.name === 'Nuevo AreaTres') {
-    $('.thumbnail img').eq(num).attr('data-aload', './dist/img/areatres.svg')
+    $('.thumbnail img').eq(num).data('aload', './dist/img/areatres.svg')
   } else if (response.data[num].venue.name === 'Aerolab') {
-    $('.thumbnail img').eq(num).attr('data-aload', './dist/img/aerolab.svg')
+    $('.thumbnail img').eq(num).data('aload', './dist/img/aerolab.svg')
   }
 }
 

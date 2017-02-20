@@ -1,3 +1,7 @@
-# Free Code Camp BA Website
+<h1 align="center">
+  <br>
+    :globe_with_meridians: <a href="https://freecodecampba.org">Free Code Camp BA Website</a>
+  <br>
+</h1>
 
-The Free Code Camp Buenos Aires website, where you can find info and links
+La página de Free Code Camp Buenos Aires, con toda la info y links que necesitás.

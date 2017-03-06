@@ -602,13 +602,7 @@ function setCard(num, response) {
   $('.caption h3').eq(num).text(response.data[num].name);
   $('.caption h4').eq(num).text(response.data[num].venue.name);
   $('.caption h5').eq(num).text(response.data[num].venue.address_1);
-  $('.caption h6')
-    .eq(num)
-    .text(
-      capitalizeFirstLetter(
-        moment(response.data[num].time).format('dddd, D MMMM, hh:mmA')
-      )
-    );
+  $('.caption h6').eq(num).text(capitalizeFirstLetter(moment(response.data[num].time).format('dddd, D MMMM, hh:mmA')));
   if (response.data[num].venue.name === 'EkoSpace') {
     $('.thumbnail img').eq(num).attr('src', './dist/img/ekospace.svg');
   } else if (response.data[num].venue.name === 'Nuevo AreaTres') {
@@ -625,20 +619,26 @@ function nextMeetups() {
     data: 'data',
     dataType: 'jsonp',
     success: function(response) {
-      console.log(response);
+      // console.log(response);
       if (response) {
-        if (response.data.length === 1) {
-          setCard(0, response);
-          $('.when2').remove();
-          $('.when1').removeClass('col-lg-6').addClass('col-lg-12');
-        } else if (response.data.length === 2) {
-          setCard(0, response);
-          setCard(1, response);
+        switch (response.data.length) {
+          case 0:
+            $('.when1,.when2').remove();
+            $('.no-meetups p').text('No hay futuros Meetups planeados');
+            return;
+          case 1:
+            setCard(0, response);
+            $('.when2').remove();
+            $('.when1').removeClass('col-lg-6').addClass('col-lg-12');
+            return;
+          case 2:
+            setCard(0, response);
+            setCard(1, response);
+            return;
+          default:
+            return;
         }
-        return;
       }
-      $('.when1,.when2').remove();
-      $('.no-meetups p').text('No hay futuros Meetups planeados');
     },
     error: function(error) {
       console.log(error);

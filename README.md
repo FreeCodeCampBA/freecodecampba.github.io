@@ -1,7 +1,3 @@
-<h1 align="center">
-  <br>
-    :globe_with_meridians: <a href="https://freecodecampba.org">Free Code Camp BA Website</a>
-  <br>
-</h1>
+# :globe_with_meridians: [**`Free Code Camp BA Website`**](https://freecodecampba.org)
 
-La página de Free Code Camp Buenos Aires, con toda la info y links que necesitás.
+> La página de Free Code Camp Buenos Aires, con toda la info y links que necesitás.

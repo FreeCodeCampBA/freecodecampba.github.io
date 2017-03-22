@@ -1,3 +1,3 @@
-# :globe_with_meridians: [**`Free Code Camp BA Website`**](https://freecodecampba.org)
+# :globe_with_meridians: [**`freeCodeCamp BA Website`**](https://freecodecampba.org)
 
-> La página de Free Code Camp Buenos Aires, con toda la info y links que necesitás.
+> La página de freeCodeCamp Buenos Aires, con toda la info y links que necesitás.

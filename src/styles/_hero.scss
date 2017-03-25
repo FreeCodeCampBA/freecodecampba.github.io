@@ -1,17 +1,55 @@
 .hero {
-  background-color: #53ACDC;
   color: white;
+  text-align: center;
+  position: relative;
   min-height: 420px;
   padding-top: 90px;
-  text-align: center;
+  background-color: #53ACDC;
+
+  .diagonal-divider {
+    width: 0;
+    height: 0;
+    border-right: 100vw solid white;
+    border-top: 100px solid #53ACDC;
+  }
 
   .hero-title {
-    font-size: 28px;
+    font-size: 32px;
     font-weight: $font-weight-normal;
   }
 
   .hero-description {
     font-weight: $font-weight-normal;
-    font-size: $font-size-base;
+    font-size: 18px;
+    line-height: 1.75em;
+  }
+
+  .video-launcher {
+    position: relative;
+    margin: 60px auto -160px;
+    width: 600px;
+    height: 320px;
+    background: linear-gradient( rgba(black, 0.5), rgba(black, 0.5) ), url('https://a248.e.akamai.net/secure.meetupstatic.com/photos/event/4/6/a/3/highres_453138083.jpeg');
+    background-size: cover;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .video-launcher-btn {
+      text-transform: uppercase;
+      font-size: 14px;
+      padding: 14px 28px;
+      border-radius: 3px;
+      background-color: white;
+      box-shadow: 0 2px 4px rgba(black, 0.1);
+      border: none;
+      cursor: pointer;
+      transition: transform 0.2s;
+
+      &:hover{
+        transform: scale(1.025);
+      }
+    }
   }
 }

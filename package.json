@@ -1,7 +1,7 @@
 {
   "name": "freecodecamp-website",
   "version": "1.0.0",
-  "description": "Website de Free Code Camp BA",
+  "description": "Website de freeCodeCamp BA",
   "main": "index.js",
   "scripts": {
     "start": "gulp",
@@ -12,7 +12,10 @@
     "fcc",
     "html",
     "css",
-    "meetup"
+    "js",
+    "node",
+    "meetup",
+    "website"
   ],
   "author": "Ariel Gerstein",
   "license": "ISC",

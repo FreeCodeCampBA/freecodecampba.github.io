@@ -1,0 +1,33 @@
+{
+  "name": "freecodecamp-website",
+  "version": "1.0.0",
+  "description": "Website de Free Code Camp BA",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "freecodecamp",
+    "fcc",
+    "html",
+    "css",
+    "meetup"
+  ],
+  "author": "Ariel Gerstein",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^3.0.3",
+    "gulp-livereload": "^3.8.1",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-scss": "^1.4.0",
+    "normalize-css": "^2.3.1"
+  },
+  "dependencies": {
+    "browser-sync": "^2.18.8"
+  }
+}

@@ -1,0 +1,17 @@
+.hero {
+  background-color: #53ACDC;
+  color: white;
+  min-height: 420px;
+  padding-top: 90px;
+  text-align: center;
+
+  .hero-title {
+    font-size: 28px;
+    font-weight: $font-weight-normal;
+  }
+
+  .hero-description {
+    font-weight: $font-weight-normal;
+    font-size: $font-size-base;
+  }
+}

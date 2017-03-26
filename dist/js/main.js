@@ -589,7 +589,7 @@ a.version="2.15.1",b(rb),a.fn=Se,a.min=tb,a.max=ub,a.now=Fe,a.utc=j,a.unix=Jc,a.
 }));
 function activeScrollpy() {
   $('body').scrollspy({
-    target: '.navbar'
+    target: '.navbar',
   });
 }
 
@@ -642,7 +642,7 @@ function nextMeetups() {
     },
     error: function(error) {
       console.log(error);
-    }
+    },
   });
 }
 

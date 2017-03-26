@@ -1,6 +1,6 @@
 function activeScrollpy() {
   $('body').scrollspy({
-    target: '.navbar'
+    target: '.navbar',
   });
 }
 
@@ -53,7 +53,7 @@ function nextMeetups() {
     },
     error: function(error) {
       console.log(error);
-    }
+    },
   });
 }
 

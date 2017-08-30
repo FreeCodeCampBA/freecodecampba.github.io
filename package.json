@@ -33,5 +33,13 @@
   },
   "dependencies": {
     "browser-sync": "^2.18.8"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FreeCodeCampBA/freecodecampba.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FreeCodeCampBA/freecodecampba.github.io/issues"
+  },
+  "homepage": "https://github.com/FreeCodeCampBA/freecodecampba.github.io#readme"
 }

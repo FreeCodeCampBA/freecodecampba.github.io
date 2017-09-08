@@ -13,10 +13,13 @@
 
   .logo {
     display: inline-flex;
-    flex-direction: column;
+    flex-direction: row;
 
     .logo-image {
       margin-right: 10px;
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
     }
 
     .logo-text {

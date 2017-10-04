@@ -15,6 +15,7 @@
     margin-top: 160px;
     font-weight: $font-weight-normal;
     text-align: center;
+    margin-bottom: 40px;
   }
 
 
@@ -44,12 +45,20 @@
         padding: 13px 78px;
         color: #FFF;
 
-        &:hover{
+        &:hover {
           transform: scale(1.025);
         }
       }
 
       .meetup-info {
+        .info-text {
+          margin-bottom: 20px;
+        }
+
+        span {
+          display: block;
+        }
+
         .info-label {
           color: $color-text-light;
           text-transform: uppercase;

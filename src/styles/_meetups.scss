@@ -44,6 +44,8 @@
         transition: transform 0.2s;
         padding: 13px 78px;
         color: #FFF;
+        display: inline-block;
+        margin-top: 16px;
 
         &:hover {
           transform: scale(1.025);

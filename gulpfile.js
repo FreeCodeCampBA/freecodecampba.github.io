@@ -3,7 +3,7 @@ const browserSync = require('browser-sync').create();
 const plugins = require('gulp-load-plugins')();
 
 const pugFiles = ['./src/templates/*.pug'];
-const jsFiles = ['./src/javascript/index.js'];
+const jsFiles = ['./src/javascript/*.js'];
 const styleFiles = ['./src/styles/*.scss'];
 
 gulp.task('pug', () => {
@@ -15,7 +15,7 @@ gulp.task('pug', () => {
 gulp.task('scripts', () => {
   return gulp.src(jsFiles)
     .pipe(plugins.uglify())
-    .pipe(gulp.dest('./dist/javascript/index.js'));
+    .pipe(gulp.dest('./dist/javascript'));
 })
 
 gulp.task('styles', () => {

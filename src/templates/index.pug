@@ -3,6 +3,8 @@ html
   head
     title
       | freeCodeCampBA
+    link(href="src/styles/owl.carousel.min.css",rel="stylesheet",type="text/css")    
+    link(href="src/styles/owl.theme.default.min.css",rel="stylesheet",type="text/css")  
     link(href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css",rel="stylesheet",type="text/css")
     link(href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css",rel="stylesheet",type="text/css")
     link(href="https://fonts.googleapis.com/css?family=Karla:400,700",rel="stylesheet",type="text/css")
@@ -15,4 +17,5 @@ html
     include includes/supporters.pug
     include includes/footer.pug
     script(src="./dist/js/index.js")
-    script(src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js")
+    script(src="https://code.jquery.com/jquery-3.2.1.min.js")
+    script(src="src/javascript/owl.carousel.min.js")

@@ -1,0 +1,51 @@
+.main-footer {
+  background-color: #F2F2F2;
+
+  .information {
+    .head {
+      display: flex;
+
+
+      h4 {
+        span {
+          font-weight: $font-weight-normal;
+          display: block;
+        }
+
+        .title {
+          color: $color-text;
+        }
+
+        .subtitle {
+          color: $color-text-light;
+        }
+      }
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .footer-links {
+    display: flex;
+
+    ul {
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+
+      li > a {
+        color: $color-text-light;
+
+        img {
+          margin-right: 14px;
+        }
+
+        span {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

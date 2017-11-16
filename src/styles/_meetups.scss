@@ -1,0 +1,75 @@
+.meetups {
+  color: white;
+  position: relative;
+  background-color: #000000;
+  padding-bottom: 160px;
+
+  .diagonal-divider {
+    width: 0;
+    height: 0;
+    border-left: 100vw solid white;
+    border-bottom: 100px solid #000000;
+  }
+
+  .title {
+    margin-top: 160px;
+    font-weight: $font-weight-normal;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+
+  .meetup-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: $border-radius-base;
+    margin: auto;
+    width: 560px;
+    height: 335px;
+
+    .content {
+      padding-top: 19px;
+      padding-left: 30px;
+
+      h3 {
+        color: #000000;
+      }
+
+      .meetup-btn {
+        text-transform: uppercase;
+        background-color: $background-light-blue;
+        border-radius: 3px;
+        box-shadow: 0 2px 4px rgba(black, 0.1);
+        border: none;
+        cursor: pointer;
+        transition: transform 0.2s;
+        padding: 13px 78px;
+        color: #FFF;
+        display: inline-block;
+        margin-top: 16px;
+
+        &:hover {
+          transform: scale(1.025);
+        }
+      }
+
+      .meetup-info {
+        .info-text {
+          margin-bottom: 20px;
+        }
+
+        span {
+          display: block;
+        }
+
+        .info-label {
+          color: $color-text-light;
+          text-transform: uppercase;
+        }
+
+        .info-text {
+          color: $color-text-black;
+        }
+      }
+    }
+  }
+}

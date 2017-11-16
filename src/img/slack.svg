@@ -1,0 +1,43 @@
+<svg width="18" height="18" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>slack-logo</title>
+<g id="Canvas" transform="translate(-3325 -2694)">
+<g id="slack-logo">
+<g id="Group">
+<g id="Shape">
+<use xlink:href="#path0_fill" transform="translate(3333.54 2694.01)" fill="#DFA22F"/>
+</g>
+<g id="Shape">
+<use xlink:href="#path1_fill" transform="translate(3327.12 2696.09)" fill="#3CB187"/>
+</g>
+<g id="Shape">
+<use xlink:href="#path2_fill" transform="translate(3327.09 2702.55)" fill="#CE1E5B"/>
+</g>
+<g id="Shape">
+<use xlink:href="#path3_fill" transform="translate(3329.81 2705.24)" fill="#392538"/>
+</g>
+<g id="Shape">
+<use xlink:href="#path4_fill" transform="translate(3336.23 2703.15)" fill="#BB242A"/>
+</g>
+<g id="Shape">
+<use xlink:href="#path5_fill" transform="translate(3325 2696.12)" fill="#72C5CD"/>
+</g>
+<g id="Shape">
+<use xlink:href="#path6_fill" transform="translate(3327.72 2698.82)" fill="#248C73"/>
+</g>
+<g id="Shape">
+<use xlink:href="#path7_fill" transform="translate(3334.15 2696.73)" fill="#62803A"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 3.12775 1.10802C 2.85423 0.266031 1.94988 -0.194726 1.10802 0.0789299C 0.266031 0.352446 -0.194726 1.2568 0.0789299 2.09866L 4.22364 14.8509C 4.50827 15.6375 5.35792 16.0795 6.17355 15.8448C 7.02433 15.5999 7.54288 14.6963 7.27141 13.8607L 3.12775 1.10802Z"/>
+<path id="path1_fill" fill-rule="evenodd" d="M 3.12792 1.10803C 2.85426 0.266105 1.94997 -0.194653 1.10812 0.078863C 0.266058 0.352449 -0.19477 1.25674 0.0789561 2.09873L 4.22374 14.851C 4.50829 15.6375 5.35802 16.0796 6.17364 15.8447C 7.02435 15.5999 7.54291 14.6963 7.27143 13.8607L 3.12792 1.10803Z"/>
+<path id="path2_fill" fill-rule="evenodd" d="M 14.7996 3.12778C 15.6416 2.85427 16.1022 1.95005 15.8287 1.10798C 15.5552 0.266132 14.6509 -0.194696 13.809 0.0788902L 1.05677 4.22374C 0.270188 4.50823 -0.171797 5.35788 0.0629066 6.17351C 0.307805 7.02422 1.21139 7.54284 2.04691 7.27137L 14.7996 3.12785"/>
+<path id="path3_fill" fill-rule="evenodd" d="M 0.990633 4.03847L 4.03847 3.04819L 3.04805 0L 0 0.990703L 0.990633 4.03854"/>
+<path id="path4_fill" fill-rule="evenodd" d="M 0.990703 4.03903C 2.14298 3.66476 3.21398 3.31671 4.03861 3.04875L 3.04805 0L 0 0.990703L 0.990703 4.03903Z"/>
+<path id="path5_fill" fill-rule="evenodd" d="M 14.7997 3.12782C 15.6416 2.85431 16.1023 1.95002 15.8288 1.10796C 15.5553 0.266106 14.6509 -0.194652 13.8089 0.0788636L 1.05665 4.22379C 0.270137 4.50813 -0.171918 5.35786 0.0629962 6.17348C 0.307754 7.02412 1.21134 7.54275 2.047 7.27127L 14.7997 3.12775"/>
+<path id="path6_fill" fill-rule="evenodd" d="M 0.990703 4.03861C 1.82074 3.76889 2.8909 3.42112 4.03903 3.04819C 3.66476 1.89577 3.31671 0.824766 3.04875 0L 0 0.990844L 0.990703 4.03861Z"/>
+<path id="path7_fill" fill-rule="evenodd" d="M 0.990703 4.03931L 4.03917 3.04875C 3.709 2.03249 3.37879 1.01624 3.04854 0L 0 0.990844L 0.990703 4.03931Z"/>
+</defs>
+</svg>

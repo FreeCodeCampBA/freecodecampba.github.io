@@ -1,0 +1,11 @@
+<svg width="18" height="18" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>facebook-logo</title>
+<g id="Canvas" transform="translate(-3325 -2586)">
+<g id="Shape">
+<use xlink:href="#path0_fill" transform="translate(3325 2586)" fill="#3B5998"/>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 16 0L 2 0C 0.9 0 0 0.9 0 2L 0 16C 0 17.101 0.9 18 2 18L 9 18L 9 11L 7 11L 7 8.525L 9 8.525L 9 6.475C 9 4.311 10.212 2.791 12.766 2.791L 14.569 2.793L 14.569 5.398L 13.372 5.398C 12.378 5.398 12 6.144 12 6.836L 12 8.526L 14.568 8.526L 14 11L 12 11L 12 18L 16 18C 17.1 18 18 17.101 18 16L 18 2C 18 0.9 17.1 0 16 0Z"/>
+</defs>
+</svg>

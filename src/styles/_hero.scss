@@ -4,13 +4,13 @@
   position: relative;
   min-height: 420px;
   padding-top: 90px;
-  background-color: #53ACDC;
+  background-color: $background-light-blue;
 
   .diagonal-divider {
     width: 0;
     height: 0;
     border-right: 100vw solid white;
-    border-top: 100px solid #53ACDC;
+    border-top: 100px solid $background-light-blue;
   }
 
   .hero-title {

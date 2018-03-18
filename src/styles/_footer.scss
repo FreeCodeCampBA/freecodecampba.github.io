@@ -9,7 +9,7 @@ $footer-background-color: #F2F2F2;
 
   .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: stretch;
     padding-top: 20px;
     height: 240px;
@@ -32,7 +32,7 @@ $footer-background-color: #F2F2F2;
   }
 
   .slogan {
-    max-width: 235px;
+    max-width: 265px;
     padding-left: 10px;
     color: rgba(0, 0, 0, 0.6);
   }
@@ -66,8 +66,24 @@ $footer-background-color: #F2F2F2;
       list-style: none;
 
       li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+
         a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: row;
           color: rgba(0, 0, 0, 0.4);
+
+          img {
+            display: block;
+            width: 18px;
+            height: 18px;
+            margin: 4px;
+          }
         }
       }
     }

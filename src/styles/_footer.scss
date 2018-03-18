@@ -1,0 +1,75 @@
+$footer-background-color: #F2F2F2;
+
+.main-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $footer-background-color;
+  height: 374px;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding-top: 20px;
+    height: 240px;
+    background: $footer-background-color;
+  }
+
+  .logo-image {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    margin-right: 15px;
+  }
+
+  .brand {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 100%;
+    height: 56px;
+  }
+
+  .slogan {
+    max-width: 235px;
+    padding-left: 10px;
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  h3 {
+    margin: 0;
+  }
+
+  .title {
+    font-weight: 400;
+  }
+
+  .subtitle {
+    color: #919191;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    ul {
+      flex: 1;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-around;
+      flex-direction: column;
+      padding-left: 0;
+      list-style: none;
+
+      li {
+        a {
+          color: rgba(0, 0, 0, 0.4);
+        }
+      }
+    }
+  }
+}

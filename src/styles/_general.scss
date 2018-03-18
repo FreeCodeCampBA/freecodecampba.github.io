@@ -3,6 +3,7 @@ $color-text: $color-text-black;
 $color-text-light: rgba(#000, .54);
 $color-text-lighter: rgba(#000, .26);
 $background-light-blue: #53ACDC;
+$background-black: $color-text-black;
 
 $text-color: $color-text-black;
 $link-color: #4990E2;
@@ -52,4 +53,36 @@ a {
 
 strong {
   font-weight: $font-weight-bold;
+}
+
+.full-height {
+  height: 100vh;
+}
+
+.center-both {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.next-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 50px;
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    font-weight: bold;
+    border-radius: 100%;
+    border: 1px solid $link-color;
+  }
 }

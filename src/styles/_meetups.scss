@@ -18,13 +18,28 @@
     margin-bottom: 40px;
   }
 
+  .meetups-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
 
   .meetup-card {
+    display: flex;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: $border-radius-base;
     margin: auto;
-    width: 560px;
+    min-width: 295px;
     height: 335px;
+
+    .image {
+      margin-left: 30px;
+      display: block;
+      background-size: cover;
+      background-position: center center;
+      height: 335px;
+      width: 246px;
+    }
 
     .content {
       padding-top: 19px;

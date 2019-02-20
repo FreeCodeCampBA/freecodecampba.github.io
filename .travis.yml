@@ -14,3 +14,4 @@ deploy:
     branch: production
 
 cache: npm
+if: branch != master

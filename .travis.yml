@@ -3,3 +3,5 @@ node_js:
   - node
 
 script: echo 1
+
+cache: npm

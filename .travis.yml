@@ -5,10 +5,11 @@ node_js:
 script: cd client && npm ci && npm run build && cd .. && mv ./client/public ./
 
 deploy:
-  provider: master
+  provider: pages
   skip-cleanup: true
   github-token: $GITHUB_TOKEN
   keep-history: true
+  target-branch: master
   on:
     branch: production
 

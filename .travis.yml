@@ -2,12 +2,12 @@ language: node_js
 node_js:
   - node
 
-script: cd client && npm ci && npm run build && cd .. && mv -rf client/build ./ 
+script: cd client && npm ci && npm run build && cd .. && mv -r client/build ./
 
 deploy:
   provider: master
   skip-cleanup: true
-  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  github-token: $GITHUB_TOKEN
   keep-history: true
   on:
     branch: production

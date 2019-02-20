@@ -2,7 +2,7 @@ language: node_js
 node_js:
   - node
 
-script: cd client && npm run build && cd .. && mv -rf client/build ./ 
+script: cd client && npm ci && npm run build && cd .. && mv -rf client/build ./ 
 
 deploy:
   provider: master

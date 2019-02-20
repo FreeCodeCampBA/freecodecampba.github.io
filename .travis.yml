@@ -2,7 +2,7 @@ language: node_js
 node_js:
   - node
 
-script: cd client && npm ci && npm run build && cd .. && mv ./client/public/* ./
+script: cd client && npm ci && npm run build && cd .. && mv ./client/public/* ./ && rm README.md
 
 deploy:
   provider: pages

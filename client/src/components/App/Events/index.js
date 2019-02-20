@@ -8,13 +8,12 @@ import { Container, Background, BackgroundFooter, Content, EventBox } from './st
 dayjs.locale('es')
 
 const getNextMeetups = async () => {
-  const baseUrl = 'https://api.meetup.com/FreeCodeCampBA/'
-  const url = `${baseUrl}events?photo-host=public&page=2&sig_id=471f4512414422381c386239397b703d`
+  const url = 'https://wt-8a099f3e7c73b2d17f4e018b6cfd6131-0.sandbox.auth0-extend.com/freeCodeCampEvents'
 
-  const response = await fetch(url)
-  const data = await response.json()
+   const response = await fetch(url)
+   const { data } = await response.json()
 
-  return data
+   return data
 }
 
 const Events = () => {

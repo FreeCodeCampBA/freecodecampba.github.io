@@ -1,0 +1,96 @@
+:root {
+  --grey-1: #fafafa;
+  --grey-2: #eaeaea;
+  --grey-3: #999999;
+  --grey-4: #666666;
+  --grey-5: #333333;
+  --blue: #0076ff;
+  --light-blue: #58acdc;
+  --magenta: #ff0080;
+  --orange: #f5a623;
+  --yellow: #f8e71c;
+  --green: #50e3c2;
+}
+
+@import url('https://rsms.me/inter/inter.css');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+}
+
+html {
+  line-height: 1.15;
+  word-break: break-word;
+  scroll-behavior: smooth;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-size: 1rem/1.6;
+  min-height: 100%;
+  font-size: var(--font-size);
+  overscroll-behavior: contain;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Inter', sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  body {
+    font-family: 'Inter var', sans-serif;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+iframe {
+  border: none;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+img {
+  border: none;
+  height: auto;
+  max-width: 100%;
+}
+
+a,
+a:active,
+a:focus {
+  text-decoration: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+[disabled] {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 996px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}

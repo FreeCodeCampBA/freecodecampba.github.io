@@ -4,4 +4,12 @@ node_js:
 
 script: npm run build
 
+deploy:
+  provider: master
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep-history: true
+  on:
+    branch: production
+
 cache: npm

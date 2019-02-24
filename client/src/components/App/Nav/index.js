@@ -4,9 +4,13 @@ import { StyledNav } from './styled'
 
 const Nav = () => {
   const [activeLink, setActiveLink] = useState('home')
-
+  const [scrolled, setScrolled] = useState(false)
   const handleLinkClick = ({ target }) => setActiveLink(target.name)
+  const handleScroll = () => {console.log('p', window.scrollY)}
 
+  const scrollListener = window.addEventListener('scroll', () => {
+    handleScroll()
+  })
   const links = [
     { href: '#home', name: 'home', text: 'Home' },
     { href: '#about', name: 'about', text: 'Sobre nosotros' },
@@ -15,7 +19,7 @@ const Nav = () => {
 
   return (
     <StyledNav>
-      <div className="container">
+      <div className="container" >
         <StyledNav.Left>
           <img
             src="https://res.cloudinary.com/dxm7p7ceq/image/upload/v1550495218/logo_rpgen2.png"

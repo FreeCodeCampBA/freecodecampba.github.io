@@ -8,9 +8,8 @@ const Nav = () => {
   const handleLinkClick = ({ target }) => setActiveLink(target.name)
   const handleScroll = () => {console.log('p', window.scrollY)}
 
-  const scrollListener = window.addEventListener('scroll', () => {
-    handleScroll()
-  })
+  const scrollListener = window.addEventListener('scroll', 
+    handleScroll)
   const links = [
     { href: '#home', name: 'home', text: 'Home' },
     { href: '#about', name: 'about', text: 'Sobre nosotros' },

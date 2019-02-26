@@ -68,6 +68,10 @@ const Content = styled.article`
     @media (min-width: 768px) {
       bottom: -80px;
     }
+
+    @media (min-width: 768px) and (max-height: 800px) {
+      bottom: -120px;
+    }
   }
 `
 

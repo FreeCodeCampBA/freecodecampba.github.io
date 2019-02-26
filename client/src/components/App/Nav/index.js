@@ -4,9 +4,12 @@ import { StyledNav } from './styled'
 
 const Nav = () => {
   const [activeLink, setActiveLink] = useState('home')
-
+  const [scrolled, setScrolled] = useState(false)
   const handleLinkClick = ({ target }) => setActiveLink(target.name)
+  const handleScroll = () => { window.scrollY >= 10 ? setScrolled(true) : setScrolled(false)}
 
+  const scrollListener = window.addEventListener('scroll', 
+    handleScroll)
   const links = [
     { href: '#home', name: 'home', text: 'Home' },
     { href: '#about', name: 'about', text: 'Sobre nosotros' },
@@ -14,7 +17,7 @@ const Nav = () => {
   ]
 
   return (
-    <StyledNav>
+    <StyledNav className={`${scrolled ? 'scrolled' : ''}`}>
       <div className="container">
         <StyledNav.Left>
           <img

@@ -8,17 +8,19 @@ const StyledNav = styled.nav`
   color: var(--grey-5);
   background-color: white;
   z-index: 1;
+
   &.scrolled {
-      box-shadow: 0 3px 2px -2px rgba(0,0,0,.1);
-      -webkit-box-shadow: 0 3px 2px -2px rgba(0,0,0,.1);
-    }
+    box-shadow: 0 3px 2px -2px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 3px 2px -2px rgba(0, 0, 0, 0.1);
+  }
+
   .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     height: 100%;
-    
+
     @media (min-width: 768px) {
       height: 80px;
       align-items: center;

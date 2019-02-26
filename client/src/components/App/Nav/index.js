@@ -1,20 +1,22 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 import { StyledNav } from './styled'
 
-const Nav = () => {
-  const [activeLink, setActiveLink] = useState('home')
-  const [scrolled, setScrolled] = useState(false)
-  const handleLinkClick = ({ target }) => setActiveLink(target.name)
-  const handleScroll = () => { window.scrollY >= 10 ? setScrolled(true) : setScrolled(false)}
+const links = [
+  { href: '#home', name: 'home', text: 'Home' },
+  { href: '#about', name: 'about', text: 'Sobre nosotros' },
+  { href: '#events', name: 'events', text: 'Próximos encuentros' },
+]
 
-  const scrollListener = window.addEventListener('scroll', 
-    handleScroll)
-  const links = [
-    { href: '#home', name: 'home', text: 'Home' },
-    { href: '#about', name: 'about', text: 'Sobre nosotros' },
-    { href: '#events', name: 'events', text: 'Próximos encuentros' },
-  ]
+const Nav = () => {
+  const [scrolled, setScrolled] = useState(false)
+  const [activeLink, setActiveLink] = useState('home')
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => setScrolled(windowGlobal.scrollY >= 10))
+  }, [])
+
+  const handleLinkClick = ({ target }) => setActiveLink(target.name)
 
   return (
     <StyledNav className={`${scrolled ? 'scrolled' : ''}`}>

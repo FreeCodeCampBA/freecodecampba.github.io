@@ -6,7 +6,7 @@ const Nav = () => {
   const [activeLink, setActiveLink] = useState('home')
   const [scrolled, setScrolled] = useState(false)
   const handleLinkClick = ({ target }) => setActiveLink(target.name)
-  const handleScroll = () => {console.log('p', window.scrollY)}
+  const handleScroll = () => { window.scrollY >= 10 ? setScrolled(true) : setScrolled(false)}
 
   const scrollListener = window.addEventListener('scroll', 
     handleScroll)
@@ -17,8 +17,8 @@ const Nav = () => {
   ]
 
   return (
-    <StyledNav>
-      <div className="container" >
+    <StyledNav className={`${scrolled ? 'scrolled' : ''}`}>
+      <div className="container">
         <StyledNav.Left>
           <img
             src="https://res.cloudinary.com/dxm7p7ceq/image/upload/v1550495218/logo_rpgen2.png"

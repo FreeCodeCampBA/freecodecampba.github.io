@@ -13,7 +13,7 @@ const Nav = () => {
   const [activeLink, setActiveLink] = useState('home')
 
   useEffect(() => {
-    window.addEventListener('scroll', () => setScrolled(windowGlobal.scrollY >= 10))
+    window.addEventListener('scroll', () => setScrolled(window.scrollY >= 10))
   }, [])
 
   const handleLinkClick = ({ target }) => setActiveLink(target.name)

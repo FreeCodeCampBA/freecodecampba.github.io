@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import dayjs from 'dayjs'
 import 'dayjs/locale/es'
 
-import { Organizing } from '../../shared/Icons'
 import { Container, Background, BackgroundFooter, Content, EventBox } from './styled'
 
 dayjs.locale('es')
@@ -10,10 +9,10 @@ dayjs.locale('es')
 const getNextMeetups = async () => {
   const url = 'https://wt-8a099f3e7c73b2d17f4e018b6cfd6131-0.sandbox.auth0-extend.com/freeCodeCampEvents'
 
-   const response = await fetch(url)
-   const { data } = await response.json()
+  const response = await fetch(url)
+  const { data } = await response.json()
 
-   return data
+  return data
 }
 
 const Events = () => {
@@ -24,7 +23,6 @@ const Events = () => {
     getNextMeetups()
       .then(events => {
         if (!events.length) return setStatus('No events')
-        console.log('events: ', events)
 
         setNextEvents(events)
         setStatus('success')

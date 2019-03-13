@@ -51,7 +51,7 @@ const Content = styled.article`
     font-weight: 600;
   }
 
-  iframe {
+  video {
     width: 100%;
     height: 100%;
     max-width: 568px;

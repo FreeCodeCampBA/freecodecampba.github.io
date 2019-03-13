@@ -20,12 +20,9 @@ const Home = () => (
 
       <p>Veni a conocernos para aprender sobre desarrollo web en comunidad!</p>
 
-      <iframe
-        frameBorder="0"
-        allowFullScreen
-        title="Charlas en freeCodeCampBA"
-        src="https://www.youtube.com/embed/kDhoTB_fjzo?autoplay=1&controls=0&loop=1&mute=1"
-      />
+      <video preload autoplay="true">
+        <source src="https://res.cloudinary.com/dnbygvvyz/video/upload/v1552479645/video-fcc.mp4" />
+      </video>
     </Content>
   </Container>
 )

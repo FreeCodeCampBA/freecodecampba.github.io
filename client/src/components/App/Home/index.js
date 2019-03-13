@@ -20,7 +20,7 @@ const Home = () => (
 
       <p>Veni a conocernos para aprender sobre desarrollo web en comunidad!</p>
 
-      <video preload="preload" controls="controls" autoplay="autoplay" loop="loop">
+      <video controls="controls" autoplay="autoplay" loop="loop">
         <source src="https://res.cloudinary.com/dnbygvvyz/video/upload/v1552479645/video-fcc.mp4" />
       </video>
     </Content>

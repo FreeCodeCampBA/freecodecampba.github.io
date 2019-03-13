@@ -88,7 +88,6 @@ const Events = () => {
                 frameBorder="0"
                 allowFullScreen
               />
-
             </EventBox.Right>
           </EventBox>
         )}

@@ -64,6 +64,7 @@ const Content = styled.article`
     left: 0;
     right: 0;
     bottom: -140px;
+    z-index: 1;
 
     @media (min-width: 768px) {
       bottom: -80px;

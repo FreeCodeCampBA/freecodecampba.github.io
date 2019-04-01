@@ -7,7 +7,7 @@ const StyledNav = styled.nav`
   font-weight: 500;
   color: var(--grey-5);
   background-color: white;
-  z-index: 1;
+  z-index: 2;
 
   &.scrolled {
     box-shadow: 0 3px 2px -2px rgba(0, 0, 0, 0.1);

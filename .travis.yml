@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - node
+  - 10
 
 script: cd client && npm ci && npm run build && cd .. && mv ./client/public/* ./ && rm README.md
 

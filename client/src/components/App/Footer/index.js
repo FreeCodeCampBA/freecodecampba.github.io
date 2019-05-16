@@ -8,6 +8,7 @@ import {
   SlackIcon,
   GitHubIcon,
   InstagramIcon,
+  TwitchIcon,
   QuestionsIcon,
   MapIcon,
   UsersIcon,
@@ -75,6 +76,12 @@ const Footer = () => (
             <InstagramIcon className="icon" />
             <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/freecodecampba">
               Seguinos en Instagram
+            </a>
+          </li>
+          <li className="footer__social-network">
+            <TwitchIcon className="icon" />
+            <a target="_blank" rel="noopener noreferrer" href="https://www.twitch.tv/freecodecampba">
+              Seguinos en Twitch
             </a>
           </li>
         </ul>

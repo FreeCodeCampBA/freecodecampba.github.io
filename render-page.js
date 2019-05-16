@@ -6230,7 +6230,15 @@ var Footer = function Footer() {
     target: "_blank",
     rel: "noopener noreferrer",
     href: "https://www.instagram.com/freecodecampba"
-  }, "Seguinos en Instagram")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "Seguinos en Instagram")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: "footer__social-network"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_shared_Icons__WEBPACK_IMPORTED_MODULE_2__["TwitchIcon"], {
+    className: "icon"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    target: "_blank",
+    rel: "noopener noreferrer",
+    href: "https://www.twitch.tv/freecodecampba"
+  }, "Seguinos en Twitch")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "footer__links"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Links"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
     className: "footer__social-links"
@@ -6761,6 +6769,36 @@ var Slakc = function Slakc(props) {
 
 /***/ }),
 
+/***/ "./src/components/shared/Icons/Twitch.js":
+/*!***********************************************!*\
+  !*** ./src/components/shared/Icons/Twitch.js ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var core_js_modules_es6_object_assign__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es6.object.assign */ "core-js/modules/es6.object.assign");
+/* harmony import */ var core_js_modules_es6_object_assign__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_object_assign__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+
+
+
+var TwitchIcon = function TwitchIcon(props) {
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", Object.assign({
+    viewBox: "0 0 128 134"
+  }, props), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("title", null, 'Twitch icon'), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("path", {
+    class: "cls-1",
+    d: "M89,77l-9,23v94h32v17h18l17-17h26l35-35V77H89Zm107,76-20,20H144l-17,17V173H100V89h96v64Zm-20-41v35H164V112h12Zm-32,0v35H132V112h12Z",
+    transform: "translate(-80 -77)"
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (TwitchIcon);
+
+/***/ }),
+
 /***/ "./src/components/shared/Icons/Twitter.js":
 /*!************************************************!*\
   !*** ./src/components/shared/Icons/Twitter.js ***!
@@ -6834,7 +6872,7 @@ var UsersIcon = function UsersIcon(props) {
 /*!**********************************************!*\
   !*** ./src/components/shared/Icons/index.js ***!
   \**********************************************/
-/*! exports provided: FacebookIcon, TwitterIcon, MeetupIcon, SlackIcon, GitHubIcon, InstagramIcon, QuestionsIcon, MapIcon, UsersIcon, MicrophoneIcon, MailIcon */
+/*! exports provided: FacebookIcon, TwitterIcon, MeetupIcon, SlackIcon, GitHubIcon, InstagramIcon, TwitchIcon, QuestionsIcon, MapIcon, UsersIcon, MicrophoneIcon, MailIcon */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6857,20 +6895,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Instagram__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Instagram */ "./src/components/shared/Icons/Instagram.js");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "InstagramIcon", function() { return _Instagram__WEBPACK_IMPORTED_MODULE_5__["default"]; });
 
-/* harmony import */ var _Questions__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Questions */ "./src/components/shared/Icons/Questions.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "QuestionsIcon", function() { return _Questions__WEBPACK_IMPORTED_MODULE_6__["default"]; });
+/* harmony import */ var _Twitch__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Twitch */ "./src/components/shared/Icons/Twitch.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "TwitchIcon", function() { return _Twitch__WEBPACK_IMPORTED_MODULE_6__["default"]; });
 
-/* harmony import */ var _Map__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Map */ "./src/components/shared/Icons/Map.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "MapIcon", function() { return _Map__WEBPACK_IMPORTED_MODULE_7__["default"]; });
+/* harmony import */ var _Questions__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Questions */ "./src/components/shared/Icons/Questions.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "QuestionsIcon", function() { return _Questions__WEBPACK_IMPORTED_MODULE_7__["default"]; });
 
-/* harmony import */ var _Users__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Users */ "./src/components/shared/Icons/Users.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "UsersIcon", function() { return _Users__WEBPACK_IMPORTED_MODULE_8__["default"]; });
+/* harmony import */ var _Map__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Map */ "./src/components/shared/Icons/Map.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "MapIcon", function() { return _Map__WEBPACK_IMPORTED_MODULE_8__["default"]; });
 
-/* harmony import */ var _Microphone__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./Microphone */ "./src/components/shared/Icons/Microphone.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "MicrophoneIcon", function() { return _Microphone__WEBPACK_IMPORTED_MODULE_9__["default"]; });
+/* harmony import */ var _Users__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./Users */ "./src/components/shared/Icons/Users.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "UsersIcon", function() { return _Users__WEBPACK_IMPORTED_MODULE_9__["default"]; });
 
-/* harmony import */ var _Mail__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./Mail */ "./src/components/shared/Icons/Mail.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "MailIcon", function() { return _Mail__WEBPACK_IMPORTED_MODULE_10__["default"]; });
+/* harmony import */ var _Microphone__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./Microphone */ "./src/components/shared/Icons/Microphone.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "MicrophoneIcon", function() { return _Microphone__WEBPACK_IMPORTED_MODULE_10__["default"]; });
+
+/* harmony import */ var _Mail__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./Mail */ "./src/components/shared/Icons/Mail.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "MailIcon", function() { return _Mail__WEBPACK_IMPORTED_MODULE_11__["default"]; });
+
 
 
 

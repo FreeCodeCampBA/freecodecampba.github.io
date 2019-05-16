@@ -4,6 +4,7 @@ import MeetupIcon from './Meetup'
 import SlackIcon from './Slack'
 import GitHubIcon from './GitHub'
 import InstagramIcon from './Instagram'
+import TwitchIcon from './Twitch'
 
 import QuestionsIcon from './Questions'
 import MapIcon from './Map'
@@ -18,6 +19,7 @@ export {
   SlackIcon,
   GitHubIcon,
   InstagramIcon,
+  TwitchIcon,
   QuestionsIcon,
   MapIcon,
   UsersIcon,

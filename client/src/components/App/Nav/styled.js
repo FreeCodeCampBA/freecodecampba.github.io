@@ -56,11 +56,12 @@ StyledNav.Left = styled.div`
 
 StyledNav.Right = styled.ul`
   display: grid;
-  grid-gap: 40px;
+  grid-gap: 20px;
   grid-auto-flow: row;
   padding: 10px;
 
   @media (min-width: 768px) {
+    grid-gap: 40px;
     grid-auto-flow: column;
   }
 

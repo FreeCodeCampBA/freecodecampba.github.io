@@ -3,6 +3,7 @@ import dayjs from 'dayjs'
 import 'dayjs/locale/es'
 
 import { Container, Background, BackgroundFooter, Content, EventBox } from './styled'
+import OuterLink from '../../shared/OuterLink'
 
 dayjs.locale('es')
 
@@ -73,9 +74,9 @@ const Events = () => {
                 </p>
               </div>
 
-              <a href={nextEvents[0].link} target="_blank" rel="noopener noreferrer">
+              <OuterLink href={nextEvents[0].link}>
                 Inscribite
-              </a>
+              </OuterLink>
             </EventBox.Left>
             <EventBox.Right>
               <iframe

@@ -5934,18 +5934,22 @@ module.exports = {"data":{"site":{"siteMetadata":{"title":"freeCodeCampBA","desc
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _styled__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styled */ "./src/components/App/About/styled.js");
+/* harmony import */ var _shared_OuterLink__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../shared/OuterLink */ "./src/components/shared/OuterLink/index.js");
+/* harmony import */ var _styled__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styled */ "./src/components/App/About/styled.js");
+
 
 
 
 var About = function About() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styled__WEBPACK_IMPORTED_MODULE_1__["Container"], {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styled__WEBPACK_IMPORTED_MODULE_2__["Container"], {
     id: "about"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styled__WEBPACK_IMPORTED_MODULE_1__["Content"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Sobre nosotros"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Somos una comunidad de aprendizaje sobre desarrollo y tecnolog\xEDas web. Promovemos una forma de aprendizaje autodidacta, experimental y colaborativa."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Vas a tu propio ritmo, en un ambiente motivador y totalmente distendido. Creemos que la mejor forma de aprender a programar es... \xA1programando!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Si quer\xE9s saber m\xE1s, te recomendamos leer nuestra", ' ', react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "https://github.com/FreeCodeCampBA/quick-start",
-    target: "_blank",
-    rel: "noopener noreferrer"
-  }, "gu\xEDa r\xE1pida para empezar"), "."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("figure", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styled__WEBPACK_IMPORTED_MODULE_2__["Content"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Sobre nosotros"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Somos una comunidad de aprendizaje sobre desarrollo y tecnolog\xEDas web. Promovemos una forma de aprendizaje autodidacta, experimental y colaborativa."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Vas a tu propio ritmo, en un ambiente motivador y totalmente distendido. Creemos que la mejor forma de aprender a programar es... \xA1programando!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Si quer\xE9s saber m\xE1s, te recomendamos leer nuestra", ' ', react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_shared_OuterLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    href: "https://github.com/FreeCodeCampBA/quick-start"
+  }, "gu\xEDa r\xE1pida para empezar"), "."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Te recordamos que nos regimos en todos nuestros espacios por nuestro", ' ', react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_shared_OuterLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    href: "https://github.com/FreeCodeCampBA/codigo"
+  }, "c\xF3digo de conducta"), ". Si notas que alguien lo est\xE1 incumpliendo, no dudes en contactar con cualquiera de ", ' ', react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_shared_OuterLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    href: "https://github.com/FreeCodeCampBA/quick-start#organizadores"
+  }, "los organizadores"), "."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("figure", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     alt: "Meetup de Mayo en Aerolab",
     src: "https://res.cloudinary.com/dxm7p7ceq/image/upload/v1550578493/mayo_c4r4nt.jpg"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("figcaption", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Meetup de Mayo 2018"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, "Aerolab")))));
@@ -6006,6 +6010,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var dayjs_locale_es__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! dayjs/locale/es */ "./node_modules/dayjs/locale/es.js");
 /* harmony import */ var dayjs_locale_es__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(dayjs_locale_es__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var _styled__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./styled */ "./src/components/App/Events/styled.js");
+/* harmony import */ var _shared_OuterLink__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../shared/OuterLink */ "./src/components/shared/OuterLink/index.js");
+
 
 
 
@@ -6087,10 +6093,8 @@ var Events = function Events() {
     className: "info"
   }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("h5", null, "Horario:"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", null, dayjs__WEBPACK_IMPORTED_MODULE_6___default()(nextEvents[0].time).format('hh:mmA'))), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
     className: "info"
-  }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("h5", null, "Lugar:"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", null, nextEvents[0].venue.name, " (", nextEvents[0].venue.address_1, ")")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
-    href: nextEvents[0].link,
-    target: "_blank",
-    rel: "noopener noreferrer"
+  }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("h5", null, "Lugar:"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", null, nextEvents[0].venue.name, " (", nextEvents[0].venue.address_1, ")")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_shared_OuterLink__WEBPACK_IMPORTED_MODULE_9__["default"], {
+    href: nextEvents[0].link
   }, "Inscribite")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_styled__WEBPACK_IMPORTED_MODULE_8__["EventBox"].Right, null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("iframe", {
     src: "https://maps.google.com/maps?q=" + nextEvents[0].venue.lat + "," + nextEvents[0].venue.lon + "&hl=en&z=14&amp;&output=embed",
     width: "100%",
@@ -6153,6 +6157,47 @@ EventBox.Right = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.w
 
 /***/ }),
 
+/***/ "./src/components/App/Footer/components/IconLink/index.js":
+/*!****************************************************************!*\
+  !*** ./src/components/App/Footer/components/IconLink/index.js ***!
+  \****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _shared_OuterLink__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../shared/OuterLink */ "./src/components/shared/OuterLink/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+
+var IconLink = function IconLink(_ref) {
+  var Icon = _ref.Icon,
+      children = _ref.children,
+      className = _ref.className,
+      href = _ref.href;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: className
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Icon, {
+    className: "icon"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_shared_OuterLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    href: href
+  }, children));
+};
+
+IconLink.propTypes = {
+  Icon: prop_types__WEBPACK_IMPORTED_MODULE_2__["func"].isRequired,
+  className: prop_types__WEBPACK_IMPORTED_MODULE_2__["string"].isRequired,
+  href: prop_types__WEBPACK_IMPORTED_MODULE_2__["string"].isRequired
+};
+/* harmony default export */ __webpack_exports__["default"] = (IconLink);
+
+/***/ }),
+
 /***/ "./src/components/App/Footer/index.js":
 /*!********************************************!*\
   !*** ./src/components/App/Footer/index.js ***!
@@ -6166,6 +6211,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _styled__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styled */ "./src/components/App/Footer/styled.js");
 /* harmony import */ var _shared_Icons__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../shared/Icons */ "./src/components/shared/Icons/index.js");
+/* harmony import */ var _components_IconLink__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/IconLink */ "./src/components/App/Footer/components/IconLink/index.js");
+
 
 
 
@@ -6182,107 +6229,59 @@ var Footer = function Footer() {
     className: "footer__social"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Social"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
     className: "footer__social-networks"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "footer__social-network"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_shared_Icons__WEBPACK_IMPORTED_MODULE_2__["FacebookIcon"], {
-    className: "icon"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    target: "_blank",
-    rel: "noopener noreferrer",
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_IconLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    Icon: _shared_Icons__WEBPACK_IMPORTED_MODULE_2__["FacebookIcon"],
+    className: "footer__social-network",
     href: "https://www.facebook.com/groups/free.code.camp.buenos.aires"
-  }, "Seguinos en Facebook")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "footer__social-network"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_shared_Icons__WEBPACK_IMPORTED_MODULE_2__["TwitterIcon"], {
-    className: "icon"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    target: "_blank",
-    rel: "noopener noreferrer",
+  }, "Seguinos en Facebook"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_IconLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    Icon: _shared_Icons__WEBPACK_IMPORTED_MODULE_2__["TwitterIcon"],
+    className: "footer__social-network",
     href: "https://twitter.com/freecodecampba?lang=en"
-  }, "Seguinos en Twitter")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "footer__social-network"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_shared_Icons__WEBPACK_IMPORTED_MODULE_2__["MeetupIcon"], {
-    className: "icon"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    target: "_blank",
-    rel: "noopener noreferrer",
+  }, "Seguinos en Twitter"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_IconLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    Icon: _shared_Icons__WEBPACK_IMPORTED_MODULE_2__["MeetupIcon"],
+    className: "footer__social-network",
     href: "https://www.meetup.com/es/FreeCodeCampBA"
-  }, "Seguinos en Meetup")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "footer__social-network"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_shared_Icons__WEBPACK_IMPORTED_MODULE_2__["SlackIcon"], {
-    className: "icon"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    target: "_blank",
-    rel: "noopener noreferrer",
+  }, "Seguinos en Meetup"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_IconLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    Icon: _shared_Icons__WEBPACK_IMPORTED_MODULE_2__["SlackIcon"],
+    className: "footer__social-network",
     href: "https://freecodecampba.org/chat"
-  }, "Unite al chat de Slack")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "footer__social-network"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_shared_Icons__WEBPACK_IMPORTED_MODULE_2__["GitHubIcon"], {
-    className: "icon"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    target: "_blank",
-    rel: "noopener noreferrer",
+  }, "Unite al chat de Slack"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_IconLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    Icon: _shared_Icons__WEBPACK_IMPORTED_MODULE_2__["GitHubIcon"],
+    className: "footer__social-network",
     href: "https://github.com/FreeCodeCampBA"
-  }, "Seguinos en GitHub")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "footer__social-network"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_shared_Icons__WEBPACK_IMPORTED_MODULE_2__["InstagramIcon"], {
-    className: "icon"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    target: "_blank",
-    rel: "noopener noreferrer",
+  }, "Seguinos en GitHub"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_IconLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    Icon: _shared_Icons__WEBPACK_IMPORTED_MODULE_2__["InstagramIcon"],
+    className: "footer__social-network",
     href: "https://www.instagram.com/freecodecampba"
-  }, "Seguinos en Instagram")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "footer__social-network"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_shared_Icons__WEBPACK_IMPORTED_MODULE_2__["TwitchIcon"], {
-    className: "icon"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    target: "_blank",
-    rel: "noopener noreferrer",
+  }, "Seguinos en Instagram"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_IconLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    Icon: _shared_Icons__WEBPACK_IMPORTED_MODULE_2__["TwitchIcon"],
+    className: "footer__social-network",
     href: "https://www.twitch.tv/freecodecampba"
-  }, "Seguinos en Twitch")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "Seguinos en Twitch"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "footer__links"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Links"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
     className: "footer__social-links"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "footer__social-link"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_shared_Icons__WEBPACK_IMPORTED_MODULE_2__["QuestionsIcon"], {
-    className: "icon"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    target: "_blank",
-    rel: "noopener noreferrer",
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_IconLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    Icon: _shared_Icons__WEBPACK_IMPORTED_MODULE_2__["QuestionsIcon"],
+    className: "footer__social-link",
     href: "https://github.com/FreeCodeCampBA/faq"
-  }, "Preguntas Frecuentes")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "footer__social-link"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_shared_Icons__WEBPACK_IMPORTED_MODULE_2__["MapIcon"], {
-    className: "icon"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    target: "_blank",
-    rel: "noopener noreferrer",
+  }, "Preguntas Frecuentes"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_IconLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    Icon: _shared_Icons__WEBPACK_IMPORTED_MODULE_2__["MapIcon"],
+    className: "footer__social-link",
     href: "https://github.com/FreeCodeCampBA/quick-start"
-  }, "Guia Inicial del Grupo")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "footer__social-link"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_shared_Icons__WEBPACK_IMPORTED_MODULE_2__["UsersIcon"], {
-    className: "icon"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    target: "_blank",
-    rel: "noopener noreferrer",
+  }, "Guia Inicial del Grupo"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_IconLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    Icon: _shared_Icons__WEBPACK_IMPORTED_MODULE_2__["UsersIcon"],
+    className: "footer__social-link",
     href: "https://github.com/FreeCodeCampBA/codigo"
-  }, "C\xF3digo de Conducta")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "footer__social-link"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_shared_Icons__WEBPACK_IMPORTED_MODULE_2__["MicrophoneIcon"], {
-    className: "icon"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    target: "_blank",
-    rel: "noopener noreferrer",
+  }, "C\xF3digo de Conducta"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_IconLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    Icon: _shared_Icons__WEBPACK_IMPORTED_MODULE_2__["MicrophoneIcon"],
+    className: "footer__social-link",
     href: "https://github.com/FreeCodeCampBA/charlas"
-  }, "Charlas")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "footer__social-link"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_shared_Icons__WEBPACK_IMPORTED_MODULE_2__["MailIcon"], {
-    className: "icon"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    target: "_blank",
-    rel: "noopener noreferrer",
+  }, "Charlas"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_IconLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    Icon: _shared_Icons__WEBPACK_IMPORTED_MODULE_2__["MailIcon"],
+    className: "footer__social-link",
     href: "mailto:freecodecampba@gmail.com"
-  }, "Contacto"))))));
+  }, "Contacto")))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Footer);
@@ -6326,20 +6325,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _styled__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styled */ "./src/components/App/Home/styled.js");
+/* harmony import */ var _shared_OuterLink__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../shared/OuterLink */ "./src/components/shared/OuterLink/index.js");
+
 
 
 
 var Home = function Home() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styled__WEBPACK_IMPORTED_MODULE_1__["Container"], {
     id: "home"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styled__WEBPACK_IMPORTED_MODULE_1__["Background"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styled__WEBPACK_IMPORTED_MODULE_1__["Content"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Somos la comunidad de", ' ', react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "https://www.freecodecamp.org",
-    target: "_blank",
-    rel: "noopener noreferrer"
-  }, "freeCodeCamp"), ' ', "en", ' ', react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "https://en.wikipedia.org/wiki/Buenos_Aires",
-    target: "_blank",
-    rel: "noopener noreferrer"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styled__WEBPACK_IMPORTED_MODULE_1__["Background"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styled__WEBPACK_IMPORTED_MODULE_1__["Content"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Somos la comunidad de", ' ', react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_shared_OuterLink__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    href: "https://www.freecodecamp.org"
+  }, "freeCodeCamp"), ' ', "en", ' ', react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_shared_OuterLink__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    href: "https://en.wikipedia.org/wiki/Buenos_Aires"
   }, "Buenos Aires")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Veni a conocernos para aprender sobre desarrollo web en comunidad!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("video", {
     controls: "controls",
     autoPlay: true,
@@ -6480,7 +6477,7 @@ StyledNav.Left = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.w
 StyledNav.Right = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].ul.withConfig({
   displayName: "styled__Right",
   componentId: "fl3szm-2"
-})(["display:grid;grid-gap:40px;grid-auto-flow:row;padding:10px;@media (min-width:768px){grid-auto-flow:column;}a{transition:all 400ms;}a.active,a:not(.active):hover{color:var(--grey-5);}a:not(.active){color:var(--grey-3);}"]);
+})(["display:grid;grid-gap:20px;grid-auto-flow:row;padding:10px;@media (min-width:768px){grid-gap:40px;grid-auto-flow:column;}a{transition:all 400ms;}a.active,a:not(.active):hover{color:var(--grey-5);}a:not(.active){color:var(--grey-3);}"]);
 
 
 /***/ }),
@@ -6789,7 +6786,6 @@ var TwitchIcon = function TwitchIcon(props) {
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", Object.assign({
     viewBox: "0 0 128 134"
   }, props), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("title", null, 'Twitch icon'), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("path", {
-    class: "cls-1",
     d: "M89,77l-9,23v94h32v17h18l17-17h26l35-35V77H89Zm107,76-20,20H144l-17,17V173H100V89h96v64Zm-20-41v35H164V112h12Zm-32,0v35H132V112h12Z",
     transform: "translate(-80 -77)"
   }));
@@ -6957,6 +6953,39 @@ Layout.propTypes = {
   children: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.node.isRequired
 };
 /* harmony default export */ __webpack_exports__["default"] = (Layout);
+
+/***/ }),
+
+/***/ "./src/components/shared/OuterLink/index.js":
+/*!**************************************************!*\
+  !*** ./src/components/shared/OuterLink/index.js ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+
+
+
+var OuterLink = function OuterLink(_ref) {
+  var children = _ref.children,
+      href = _ref.href;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: href,
+    rel: "noopener noreferrer",
+    target: "_blank"
+  }, children);
+};
+
+OuterLink.propTypes = {
+  href: prop_types__WEBPACK_IMPORTED_MODULE_1__["string"].isRequired
+};
+/* harmony default export */ __webpack_exports__["default"] = (OuterLink);
 
 /***/ }),
 

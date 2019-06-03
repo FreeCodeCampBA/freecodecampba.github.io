@@ -27,6 +27,18 @@ const About = () => (
         .
       </p>
 
+      <p>
+        Te recordamos que nos regimos en todos nuestros espacios por nuestro{' '}
+        <OuterLink href="https://github.com/FreeCodeCampBA/codigo">
+          código de conducta
+        </OuterLink>
+        . Si notas que alguien lo está incumpliendo, no dudes en contactar con cualquiera de {' '}
+        <OuterLink href="https://github.com/FreeCodeCampBA/quick-start#organizadores">
+          lxs organizadores
+        </OuterLink>
+        .
+      </p>
+
       <figure>
         <img
           alt="Meetup de Mayo en Aerolab"

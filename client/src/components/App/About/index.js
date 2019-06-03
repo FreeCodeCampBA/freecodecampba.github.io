@@ -34,7 +34,7 @@ const About = () => (
         </OuterLink>
         . Si notas que alguien lo está incumpliendo, no dudes en contactar con cualquiera de {' '}
         <OuterLink href="https://github.com/FreeCodeCampBA/quick-start#organizadores">
-          lxs organizadores
+          los organizadores
         </OuterLink>
         .
       </p>

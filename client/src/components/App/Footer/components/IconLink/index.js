@@ -1,5 +1,5 @@
-import React from 'react';
-import OuterLink from '../../../../shared/OuterLink';
+import React from 'react'
+import OuterLink from '../../../../shared/OuterLink'
 
 const IconLink = ({ Icon, children, className, href }) => (
   <li className={className}>
@@ -8,6 +8,6 @@ const IconLink = ({ Icon, children, className, href }) => (
       {children}
     </OuterLink>
   </li>
-);
+)
 
-export default IconLink;
+export default IconLink

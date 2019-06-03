@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 
-import { Container, Content } from './styled';
+import { Container, Content } from './styled'
 import {
   FacebookIcon,
   TwitterIcon,
@@ -14,8 +14,8 @@ import {
   UsersIcon,
   MicrophoneIcon,
   MailIcon
-} from '../../shared/Icons';
-import IconLink from './components/IconLink';
+} from '../../shared/Icons'
+import IconLink from './components/IconLink'
 
 const Footer = () => (
   <Container>
@@ -134,6 +134,6 @@ const Footer = () => (
       </div>
     </Content>
   </Container>
-);
+)
 
-export default Footer;
+export default Footer

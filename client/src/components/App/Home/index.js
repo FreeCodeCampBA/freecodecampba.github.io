@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { Container, Background, Content } from './styled'
-import OuterLink from '../../shared/OuterLink';
+import OuterLink from '../../shared/OuterLink'
 
 const Home = () => (
   <Container id="home">

@@ -3,7 +3,7 @@ import dayjs from 'dayjs'
 import 'dayjs/locale/es'
 
 import { Container, Background, BackgroundFooter, Content, EventBox } from './styled'
-import OuterLink from '../../shared/OuterLink';
+import OuterLink from '../../shared/OuterLink'
 
 dayjs.locale('es')
 

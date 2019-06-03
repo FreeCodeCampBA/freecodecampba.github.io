@@ -1,5 +1,7 @@
 import React from 'react'
 
+import OuterLink from '../../shared/OuterLink'
+
 import { Container, Content } from './styled'
 
 const About = () => (
@@ -19,9 +21,9 @@ const About = () => (
 
       <p>
         Si querés saber más, te recomendamos leer nuestra{' '}
-        <a href="https://github.com/FreeCodeCampBA/quick-start" target="_blank" rel="noopener noreferrer">
+        <OuterLink href="https://github.com/FreeCodeCampBA/quick-start">
           guía rápida para empezar
-        </a>
+        </OuterLink>
         .
       </p>
 

@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { Container, Background, Content } from './styled'
+import OuterLink from '../../shared/OuterLink';
 
 const Home = () => (
   <Container id="home">
@@ -9,13 +10,13 @@ const Home = () => (
     <Content>
       <h3>
         Somos la comunidad de{' '}
-        <a href="https://www.freecodecamp.org" target="_blank" rel="noopener noreferrer">
+        <OuterLink href="https://www.freecodecamp.org">
           freeCodeCamp
-        </a>{' '}
+        </OuterLink>{' '}
         en{' '}
-        <a href="https://en.wikipedia.org/wiki/Buenos_Aires" target="_blank" rel="noopener noreferrer">
+        <OuterLink href="https://en.wikipedia.org/wiki/Buenos_Aires">
           Buenos Aires
-        </a>
+        </OuterLink>
       </h3>
 
       <p>Veni a conocernos para aprender sobre desarrollo web en comunidad!</p>

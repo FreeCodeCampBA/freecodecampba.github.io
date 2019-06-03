@@ -13,8 +13,9 @@ import {
   MapIcon,
   UsersIcon,
   MicrophoneIcon,
-  MailIcon,
+  MailIcon
 } from '../../shared/Icons'
+import IconLink from './components/IconLink'
 
 const Footer = () => (
   <Container>
@@ -38,52 +39,55 @@ const Footer = () => (
         <h3>Social</h3>
 
         <ul className="footer__social-networks">
-          <li className="footer__social-network">
-            <FacebookIcon className="icon" />
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.facebook.com/groups/free.code.camp.buenos.aires"
-            >
-              Seguinos en Facebook
-            </a>
-          </li>
-          <li className="footer__social-network">
-            <TwitterIcon className="icon" />
-            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/freecodecampba?lang=en">
-              Seguinos en Twitter
-            </a>
-          </li>
-          <li className="footer__social-network">
-            <MeetupIcon className="icon" />
-            <a target="_blank" rel="noopener noreferrer" href="https://www.meetup.com/es/FreeCodeCampBA">
-              Seguinos en Meetup
-            </a>
-          </li>
-          <li className="footer__social-network">
-            <SlackIcon className="icon" />
-            <a target="_blank" rel="noopener noreferrer" href="https://freecodecampba.org/chat">
-              Unite al chat de Slack
-            </a>
-          </li>
-          <li className="footer__social-network">
-            <GitHubIcon className="icon" />
-            <a target="_blank" rel="noopener noreferrer" href="https://github.com/FreeCodeCampBA">
-              Seguinos en GitHub
-            </a>
-          </li>
-          <li className="footer__social-network">
-            <InstagramIcon className="icon" />
-            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/freecodecampba">
-              Seguinos en Instagram
-            </a>
-          </li>
-          <li className="footer__social-network">
-            <TwitchIcon className="icon" />
-            <a target="_blank" rel="noopener noreferrer" href="https://www.twitch.tv/freecodecampba">
-              Seguinos en Twitch
-            </a>
-          </li>
+          <IconLink
+            Icon={FacebookIcon}
+            className="footer__social-network"
+            href="https://www.facebook.com/groups/free.code.camp.buenos.aires"
+          >
+            Seguinos en Facebook
+          </IconLink>
+          <IconLink
+            Icon={TwitterIcon}
+            className="footer__social-network"
+            href="https://twitter.com/freecodecampba?lang=en"
+          >
+            Seguinos en Twitter
+          </IconLink>
+          <IconLink
+            Icon={MeetupIcon}
+            className="footer__social-network"
+            href="https://www.meetup.com/es/FreeCodeCampBA"
+          >
+            Seguinos en Meetup
+          </IconLink>
+          <IconLink
+            Icon={SlackIcon}
+            className="footer__social-network"
+            href="https://freecodecampba.org/chat"
+          >
+            Unite al chat de Slack
+          </IconLink>
+          <IconLink
+            Icon={GitHubIcon}
+            className="footer__social-network"
+            href="https://github.com/FreeCodeCampBA"
+          >
+            Seguinos en GitHub
+          </IconLink>
+          <IconLink
+            Icon={InstagramIcon}
+            className="footer__social-network"
+            href="https://www.instagram.com/freecodecampba"
+          >
+            Seguinos en Instagram
+          </IconLink>
+          <IconLink
+            Icon={TwitchIcon}
+            className="footer__social-network"
+            href="https://www.twitch.tv/freecodecampba"
+          >
+            Seguinos en Twitch
+          </IconLink>
         </ul>
       </div>
 
@@ -91,36 +95,41 @@ const Footer = () => (
         <h3>Links</h3>
 
         <ul className="footer__social-links">
-          <li className="footer__social-link">
-            <QuestionsIcon className="icon" />
-            <a target="_blank" rel="noopener noreferrer" href="https://github.com/FreeCodeCampBA/faq">
-              Preguntas Frecuentes
-            </a>
-          </li>
-          <li className="footer__social-link">
-            <MapIcon className="icon" />
-            <a target="_blank" rel="noopener noreferrer" href="https://github.com/FreeCodeCampBA/quick-start">
-              Guia Inicial del Grupo
-            </a>
-          </li>
-          <li className="footer__social-link">
-            <UsersIcon className="icon" />
-            <a target="_blank" rel="noopener noreferrer" href="https://github.com/FreeCodeCampBA/codigo">
-              Código de Conducta
-            </a>
-          </li>
-          <li className="footer__social-link">
-            <MicrophoneIcon className="icon" />
-            <a target="_blank" rel="noopener noreferrer" href="https://github.com/FreeCodeCampBA/charlas">
-              Charlas
-            </a>
-          </li>
-          <li className="footer__social-link">
-            <MailIcon className="icon" />
-            <a target="_blank" rel="noopener noreferrer" href="mailto:freecodecampba@gmail.com">
-              Contacto
-            </a>
-          </li>
+          <IconLink
+            Icon={QuestionsIcon}
+            className="footer__social-link"
+            href="https://github.com/FreeCodeCampBA/faq"
+          >
+            Preguntas Frecuentes
+          </IconLink>
+          <IconLink
+            Icon={MapIcon}
+            className="footer__social-link"
+            href="https://github.com/FreeCodeCampBA/quick-start"
+          >
+            Guia Inicial del Grupo
+          </IconLink>
+          <IconLink
+            Icon={UsersIcon}
+            className="footer__social-link"
+            href="https://github.com/FreeCodeCampBA/codigo"
+          >
+            Código de Conducta
+          </IconLink>
+          <IconLink
+            Icon={MicrophoneIcon}
+            className="footer__social-link"
+            href="https://github.com/FreeCodeCampBA/charlas"
+          >
+            Charlas
+          </IconLink>
+          <IconLink
+            Icon={MailIcon}
+            className="footer__social-link"
+            href="mailto:freecodecampba@gmail.com"
+          >
+            Contacto
+          </IconLink>
         </ul>
       </div>
     </Content>

@@ -1,11 +1,15 @@
 import styled from 'styled-components'
 
 const Container = styled.section`
-  height: 80vh;
+  height: 120vh;
   position: relative;
   display: flex;
   justify-content: center;
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    height: 80vh;
+  }
 `
 
 const Background = styled.div`
@@ -32,7 +36,6 @@ const BackgroundFooter = styled.div`
 
 const Content = styled.article`
   color: white;
-  position: relative;
   width: 100%;
   height: 100%;
   margin: 0 auto;
@@ -73,12 +76,17 @@ const Content = styled.article`
 
 const EventBox = styled.div`
   display: grid;
-  grid-template-columns: 314px 1fr;
-  max-width: 560px;
   height: 335px;
   border-radius: 5px;
   margin: 0 auto;
   background-color: var(--grey-4);
+  grid-template-columns: 1fr;
+  grid-template-rows: 324px 185px;
+
+  @media screen and (min-width: 768px) {
+    grid-template-rows: auto;
+    grid-template-columns: 324px 185px;
+  }
 `
 
 EventBox.Left = styled.div`
@@ -86,10 +94,15 @@ EventBox.Left = styled.div`
   padding: 30px 30px 0;
   text-align: left;
   background-color: var(--grey-2);
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
   height: 100%;
   overflow: hidden;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+
+  @media screen and (min-width: 768px) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
 
   h4 {
     color: var(--grey-4);
@@ -110,7 +123,10 @@ EventBox.Left = styled.div`
     color: var(--grey-4);
     font-weight: 400;
     font-size: 16px;
-    text-transform: capitalize;
+
+    ::first-letter {
+      text-transform: uppercase;
+    }
   }
 
   a {
@@ -132,13 +148,20 @@ EventBox.Left = styled.div`
 `
 
 EventBox.Right = styled.div`
-  border-top-right-radius: inherit;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
   border-bottom-right-radius: inherit;
   height: 100%;
   overflow: hidden;
+  text-align: initial;
 
-  iframe {
-    height: 100%;
+  > div {
+    width: 100% !important;
+  }
+
+  @media screen and (min-width: 768px) {
+    border-top-right-radius: inherit;
+    border-bottom-right-radius: inherit;
   }
 `
 

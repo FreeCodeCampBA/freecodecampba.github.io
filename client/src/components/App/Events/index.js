@@ -1,31 +1,42 @@
 import React, { useState, useEffect } from 'react'
+import ReactMapGL, { Marker } from 'react-map-gl'
+
 import dayjs from 'dayjs'
 import 'dayjs/locale/es'
 
 import { Container, Background, BackgroundFooter, Content, EventBox } from './styled'
 import OuterLink from '../../shared/OuterLink'
+import Pin from '../../shared/Pin'
 
 dayjs.locale('es')
 
 const getNextMeetups = async () => {
   const url = 'https://wt-8a099f3e7c73b2d17f4e018b6cfd6131-0.sandbox.auth0-extend.com/freeCodeCampEvents'
-
-  const response = await fetch(url)
-  const { data } = await response.json()
-
+  const { data } = await (await fetch(url)).json()
   return data
 }
 
 const Events = () => {
-  const [nextEvents, setNextEvents] = useState(null)
+  const [nextEvent, setNextEvent] = useState(null)
   const [status, setStatus] = useState('loading')
+  const [marker, setMarker] = useState(null)
+  const [viewport, setViewport] = useState({
+    width: '100%',
+    height: '100%',
+    zoom: 12,
+    latitude: -34.6037389,
+    longitude: -58.3815704,
+  })
 
   useEffect(() => {
     getNextMeetups()
-      .then(events => {
+      .then(async events => {
         if (!events.length) return setStatus('No events')
+        const [event] = events
 
-        setNextEvents(events)
+        setNextEvent(event)
+        setMarker({ latitude: event.venue.lat, longitude: event.venue.lon })
+        setViewport({ ...viewport, latitude: event.venue.lat, longitude: event.venue.lon })
         setStatus('success')
       })
       .catch(() => setStatus('error'))
@@ -55,40 +66,38 @@ const Events = () => {
         {status === 'success' && (
           <EventBox>
             <EventBox.Left>
-              <h4>freeCodeCampBA S02E01</h4>
+              <h4>{nextEvent.name}</h4>
 
               <div className="info">
-                <h5>Fecha:</h5>
-                <p>{dayjs(nextEvents[0].time).format('dddd DD[/]MM[/]YY')}</p>
+                <h5>Fecha</h5>
+                <p>{dayjs(nextEvent.time).format('dddd D [de] MMMM [a las] H[hs]')}</p>
               </div>
 
               <div className="info">
-                <h5>Horario:</h5>
-                <p>{dayjs(nextEvents[0].time).format('hh:mmA')}</p>
+                <h5>Lugar</h5>
+                <p>{nextEvent.venue.name}</p>
               </div>
 
               <div className="info">
-                <h5>Lugar:</h5>
-                <p>
-                  {nextEvents[0].venue.name} ({nextEvents[0].venue.address_1})
-                </p>
+                <h5>Dirección</h5>
+                <p>{nextEvent.venue.address_1}</p>
               </div>
 
-              <OuterLink href={nextEvents[0].link}>
-                Inscribite
-              </OuterLink>
+              <OuterLink href={nextEvent.link}>Inscribite</OuterLink>
             </EventBox.Left>
             <EventBox.Right>
-              <iframe
-                src={`https://maps.google.com/maps?q=${nextEvents[0].venue.lat},${
-                  nextEvents[0].venue.lon
-                }&hl=en&z=14&amp;&output=embed`}
-                width="100%"
-                height="335"
-                title="map"
-                frameBorder="0"
-                allowFullScreen
-              />
+              <ReactMapGL
+                {...viewport}
+                onViewportChange={setViewport}
+                mapStyle="mapbox://styles/mapbox/streets-v9"
+                mapboxApiAccessToken={process.env.GATSBY_MAPBOX_ACCESS_TOKEN}
+              >
+                {marker && (
+                  <Marker longitude={marker.longitude} latitude={marker.latitude}>
+                    <Pin size={20} />
+                  </Marker>
+                )}
+              </ReactMapGL>
             </EventBox.Right>
           </EventBox>
         )}

@@ -102,6 +102,7 @@ EventBox.Left = styled.div`
   @media screen and (min-width: 768px) {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
+        border-bottom-left-radius: inherit;
   }
 
   h4 {
@@ -150,6 +151,7 @@ EventBox.Left = styled.div`
 EventBox.Right = styled.div`
   border-top-right-radius: 0;
   border-top-left-radius: 0;
+  border-bottom-left-radius: inherit;
   border-bottom-right-radius: inherit;
   height: 100%;
   overflow: hidden;
@@ -162,6 +164,8 @@ EventBox.Right = styled.div`
   @media screen and (min-width: 768px) {
     border-top-right-radius: inherit;
     border-bottom-right-radius: inherit;
+    border-bottom-left-radius: 0;
+
   }
 `
 

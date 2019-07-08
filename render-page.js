@@ -120,8 +120,8 @@ var plugins = [{
     "name": "gatsby-starter-default",
     "short_name": "starter",
     "start_url": "/",
-    "background_color": "#663399",
-    "theme_color": "#663399",
+    "background_color": "#58acdc",
+    "theme_color": "#58acdc",
     "display": "minimal-ui",
     "icon": "src/images/fccba-icon.png"
   }

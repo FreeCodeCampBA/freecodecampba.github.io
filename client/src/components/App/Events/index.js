@@ -23,7 +23,7 @@ const Events = () => {
   const [viewport, setViewport] = useState({
     width: '100%',
     height: '100%',
-    zoom: 12,
+    zoom: 13,
     latitude: -34.6037389,
     longitude: -58.3815704,
   })

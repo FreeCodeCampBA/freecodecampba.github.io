@@ -5,8 +5,8 @@ const Container = styled.section`
   position: relative;
   display: flex;
   justify-content: center;
-  text-align: center;
-  padding-top: 180px;
+	text-align: center;
+	padding-top: 110px;
 `
 
 const Content = styled.article`

@@ -1,14 +1,15 @@
 import styled from 'styled-components'
 
 const Container = styled.section`
-  height: 70vh;
-  position: relative;
-  display: flex;
+	box-sizing: border-box;
+	display: flex;
+	height: 100vh;
   justify-content: center;
-  text-align: center;
-  padding-top: 240px;
+	padding-top: 90px;
+  position: relative;
+	text-align: center;
 
-  @media (min-width: 768px) {
+	@media (max-width: 768px) {
     padding-top: 180px;
   }
 
@@ -30,12 +31,14 @@ const Background = styled.div`
 `
 
 const Content = styled.article`
-  color: white;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
   position: relative;
-  width: 100%;
-  height: 100%;
   margin: 0 auto;
   max-width: 996px;
+  width: 100%;
 
   h3 {
     font-size: 28px;
@@ -76,18 +79,11 @@ const Content = styled.article`
 
   video {
     width: 100%;
-    height: 100%;
+		height: 100%;
+		margin: 0 auto;
+		margin-top: 3rem;
     max-width: 568px;
     max-height: 320px;
-    display: flex;
-    justify-content: center;
-    left: 0;
-    position: absolute;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    bottom: -140px;
-    z-index: 1;
    
     @media (min-width: 768px) and (max-height: 800px) {
       bottom: -120px;

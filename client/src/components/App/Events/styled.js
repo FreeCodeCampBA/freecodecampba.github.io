@@ -1,13 +1,13 @@
 import styled from 'styled-components'
 
 const Container = styled.section`
-	box-sizing: border-box;
-	display: flex;
-	padding-top: 110px;
-	padding-bottom: 2rem;
+  box-sizing: border-box;
+  display: flex;
+  padding-top: 110px;
+  padding-bottom: 2rem;
   position: relative;
-	justify-content: center;
-	min-height: 100vh;
+  justify-content: center;
+  min-height: 100vh;
   text-align: center;
 
   @media screen and (min-width: 768px) {

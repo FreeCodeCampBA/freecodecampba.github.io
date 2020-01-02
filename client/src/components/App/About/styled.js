@@ -6,7 +6,7 @@ const Container = styled.section`
   display: flex;
   justify-content: center;
   text-align: center;
-  padding-top: 180px;
+  padding-top: 110px;
 `
 
 const Content = styled.article`

@@ -67,8 +67,15 @@ const Content = styled.article`
 
   .organizing {
     img {
-      max-width: 50%;
+      max-width: 60%;
       margin-bottom: 10px;
+    }
+
+    @media (max-width: 768px) {
+      img {
+      max-width: 90%;
+      margin-bottom: 10px;
+    }
     }
 
     h4 {

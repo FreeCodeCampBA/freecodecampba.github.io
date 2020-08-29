@@ -13,7 +13,8 @@ import {
   MapIcon,
   UsersIcon,
   MicrophoneIcon,
-  MailIcon
+  MailIcon,
+  YouTubeIcon
 } from '../../shared/Icons'
 import IconLink from './components/IconLink'
 
@@ -39,6 +40,13 @@ const Footer = () => (
         <h3>Social</h3>
 
         <ul className="footer__social-networks">
+          <IconLink
+            Icon={YouTubeIcon}
+            className="footer__social-network"
+            href="https://www.youtube.com/channel/UCML6D-qES0T7YKJXfMgKo4A"
+          >
+            Suscribite en YouTube
+          </IconLink>
           <IconLink
             Icon={FacebookIcon}
             className="footer__social-network"

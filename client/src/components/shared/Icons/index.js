@@ -1,6 +1,7 @@
 import FacebookIcon from './Facebook'
 import TwitterIcon from './Twitter'
 import MeetupIcon from './Meetup'
+import YouTubeIcon from './YouTube'
 import SlackIcon from './Slack'
 import GitHubIcon from './GitHub'
 import InstagramIcon from './Instagram'
@@ -16,6 +17,7 @@ export {
   FacebookIcon,
   TwitterIcon,
   MeetupIcon,
+  YouTubeIcon,
   SlackIcon,
   GitHubIcon,
   InstagramIcon,

@@ -7,7 +7,7 @@
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.6",
     "dayjs": "^1.8.15",
-    "gatsby": "^2.13.23",
+    "gatsby": "^4.25.7",
     "gatsby-image": "^2.2.6",
     "gatsby-plugin-manifest": "^2.2.3",
     "gatsby-plugin-offline": "^2.2.4",
